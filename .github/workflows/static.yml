@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Buls Co. | Gantungan Kunci Kawat Bulu Kreatif</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        /* Menggunakan font Inter untuk tampilan yang bersih dan modern */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Latar belakang lembut */
+        }
+        /* Custom styles untuk warna brand D'Buls Co. (Biru/Ungu Ceria) */
+        .brand-primary {
+            background-color: #6366f1; /* Indigo-500 */
+        }
+        .brand-text {
+            color: #6366f1;
+        }
+        /* Style untuk tombol CTA yang menonjol */
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button:hover {
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.5), 0 4px 6px -4px rgba(99, 102, 241, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo D'Buls Co. -->
+            <a href="#" class="text-3xl font-extrabold brand-text">D'BULS <span class="text-xs font-medium text-gray-500">Co.</span></a>
+
+            <!-- Menu (Hanya Tampilkan Hamburger di Mobile) -->
+            <nav class="hidden sm:flex space-x-6 font-medium">
+                <a href="#produk" class="hover:brand-text transition duration-150">Produk</a>
+                <a href="#custom" class="hover:brand-text transition duration-150">Pesan Custom</a>
+                <a href="#tentang" class="hover:brand-text transition duration-150">Tentang Kami</a>
+                <a href="#kontak" class="hover:brand-text transition duration-150">Kontak</a>
+            </nav>
+
+            <!-- Hamburger Icon for Mobile (Not functional for single-page file, but included for complete design) -->
+            <button class="sm:hidden p-2 rounded-lg brand-text hover:bg-indigo-100 transition duration-150">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="brand-primary text-white py-16 sm:py-24" id="home">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-indigo-200 font-semibold mb-3 tracking-widest uppercase text-sm">Kerajinan Tangan Kreatif Anak Muda</p>
+                <h1 class="text-4xl sm:text-6xl font-black mb-4 leading-tight">
+                    Wujudkan Karakter Lucu Impianmu
+                </h1>
+                <p class="text-indigo-100 text-lg sm:text-xl max-w-2xl mx-auto mb-8">
+                    Gantungan kunci handmade unik dari kawat bulu. Lucu, aesthetic, dan bisa kamu desain sendiri! Cocok buat kado atau aksesoris personal.
+                </p>
+                <a href="#produk" class="cta-button inline-flex items-center bg-pink-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-pink-500">
+                    Lihat Koleksi Sekarang
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Product Showcase / Keunggulan -->
+        <section class="py-16 sm:py-24 bg-white" id="produk">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+                    Kenapa Pilih Gantungan Kunci D'Buls Co.?
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Keunggulan 1: Unik & Personal -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                        <i data-lucide="pencil-ruler" class="w-10 h-10 brand-text mx-auto mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Unik dan Personal</h3>
+                        <p class="text-gray-600">Produk 100% handmade dengan sentuhan personal. Setiap gantungan punya cerita dan karakter berbeda.</p>
+                    </div>
+
+                    <!-- Keunggulan 2: Harga Terjangkau -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                        <i data-lucide="tag" class="w-10 h-10 brand-text mx-auto mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Harga Mahasiswa</h3>
+                        <p class="text-gray-600">Sangat terjangkau! Cocok untuk kantong pelajar dan mahasiswa yang ingin tampil aesthetic tanpa menguras dompet.</p>
+                    </div>
+
+                    <!-- Keunggulan 3: Desain Custom -->
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                        <i data-lucide="sparkles" class="w-10 h-10 brand-text mx-auto mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Bisa Custom Desain</h3>
+                        <p class="text-gray-600">Mau karakter favorit? Bunga? Atau inisial nama? Kami siap wujudkan desain custom sesuai keinginanmu!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Custom Order CTA Section -->
+        <section class="py-16 sm:py-24 brand-primary" id="custom">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                <h2 class="text-3xl sm:text-5xl font-black mb-4">
+                    Punya Ide Desain Sendiri?
+                </h2>
+                <p class="text-indigo-200 text-lg sm:text-xl max-w-3xl mx-auto mb-8">
+                    Ini kesempatanmu untuk berkreasi! Kami menerima pesanan custom untuk kado spesial, suvenir wisuda, atau koleksi pribadimu.
+                </p>
+                <a href="https://wa.me/62895329090098" target="_blank" class="cta-button inline-flex items-center bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100">
+                    <i data-lucide="message-square" class="w-5 h-5 mr-2"></i>
+                    Pesan Custom via WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. Photo Gallery/Mockup Products -->
+        <section class="py-16 sm:py-24 bg-gray-50" id="galeri">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+                    Galeri Produk D'Buls Co.
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Product Mockup 1: Flower Bouquet (Based on document image) -->
+                    <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/600x600/fecaca/9333ea?text=Bunga+Manis" alt="Gantungan Kunci Bunga Manis dari Kawat Bulu" class="w-full h-auto object-cover">
+                        <div class="p-3 text-center">
+                            <p class="font-semibold text-lg">Buklet Bunga (Best Seller)</p>
+                            <span class="text-sm brand-text font-bold">Rp8.000,-</span>
+                        </div>
+                    </div>
+                    <!-- Product Mockup 2: Cute Animal/Character (Based on document image) -->
+                    <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/600x600/fef3c7/f97316?text=Karakter+Hewan" alt="Gantungan Kunci Karakter Hewan dari Kawat Bulu" class="w-full h-auto object-cover">
+                        <div class="p-3 text-center">
+                            <p class="font-semibold text-lg">Karakter Gemas</p>
+                            <span class="text-sm brand-text font-bold">Rp8.000,-</span>
+                        </div>
+                    </div>
+                    <!-- Product Mockup 3: Ribbon/Bow (Based on document image) -->
+                    <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/600x600/fce7f3/db2777?text=Pita+Cantik" alt="Gantungan Kunci Pita Cantik dari Kawat Bulu" class="w-full h-auto object-cover">
+                        <div class="p-3 text-center">
+                            <p class="font-semibold text-lg">Pita Minimalis</p>
+                            <span class="text-sm brand-text font-bold">Rp8.000,-</span>
+                        </div>
+                    </div>
+                    <!-- Product Mockup 4: Fruit/Berry (Based on document image) -->
+                    <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/600x600/dbeafe/2563eb?text=Buah+Ceri" alt="Gantungan Kunci Buah Ceri dari Kawat Bulu" class="w-full h-auto object-cover">
+                        <div class="p-3 text-center">
+                            <p class="font-semibold text-lg">Buah Ceri Lucu</p>
+                            <span class="text-sm brand-text font-bold">Rp8.000,-</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="https://shopee.co.id/dbulsco" target="_blank" class="cta-button inline-flex items-center bg-indigo-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700">
+                        Beli di Shopee Sekarang!
+                        <i data-lucide="shopping-bag" class="w-5 h-5 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. About Us / Visi Misi -->
+        <section class="py-16 sm:py-24" id="tentang">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Visi Misi Text -->
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">
+                        Tentang D'Buls Co.
+                    </h2>
+                    <p class="text-gray-600 mb-6">
+                        D'Buls Co. lahir dari ide sederhana untuk mengubah kawat bulu (pipe cleaner) yang ringan dan murah menjadi produk kerajinan tangan (handcraft) yang lucu, menarik, dan bernilai jual tinggi. Kami bersemangat untuk menginspirasi anak muda agar berani berwirausaha melalui ide-ide kreatif.
+                    </p>
+
+                    <h3 class="text-2xl font-bold brand-text mb-2">Visi Kami</h3>
+                    <p class="text-gray-600 mb-6">
+                        Menjadi usaha kreatif yang mampu menginspirasi anak muda untuk berwirausaha melalui produk handmade yang unik, lucu, dan bernilai jual.
+                    </p>
+
+                    <h3 class="text-2xl font-bold brand-text mb-2">Misi Utama</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Mengembangkan produk yang kreatif dan berkualitas.</li>
+                        <li>Memanfaatkan media sosial sebagai sarana promosi dan penjualan.</li>
+                        <li>Memberikan kepuasan konsumen dengan desain menarik dan harga terjangkau.</li>
+                    </ul>
+                </div>
+                
+                <!-- Placeholder Image (Handmade Aesthetic) -->
+                <div class="hidden lg:block">
+                    <img src="https://placehold.co/600x400/6366f1/ffffff?text=D'Buls+Handmade" alt="Ilustrasi Produk Handmade D'Buls Co." class="w-full h-auto rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section -->
+        <section class="py-16 bg-gray-100" id="kontak">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-8">
+                    Hubungi Kami
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <!-- Kontak WA -->
+                    <div class="p-6 bg-white rounded-xl shadow-md">
+                        <i data-lucide="phone" class="w-8 h-8 brand-text mx-auto mb-3"></i>
+                        <p class="font-semibold">WhatsApp</p>
+                        <a href="https://wa.me/62895329090098" target="_blank" class="text-sm text-indigo-500 hover:underline">+62 895-3290-90098</a>
+                    </div>
+                    <!-- Kontak Email -->
+                    <div class="p-6 bg-white rounded-xl shadow-md">
+                        <i data-lucide="mail" class="w-8 h-8 brand-text mx-auto mb-3"></i>
+                        <p class="font-semibold">Email</p>
+                        <a href="mailto:dbulsco@gmail.com" class="text-sm text-indigo-500 hover:underline">dbulsco@gmail.com</a>
+                    </div>
+                    <!-- Kontak Instagram -->
+                    <div class="p-6 bg-white rounded-xl shadow-md">
+                        <i data-lucide="instagram" class="w-8 h-8 brand-text mx-auto mb-3"></i>
+                        <p class="font-semibold">Instagram</p>
+                        <a href="https://instagram.com/dbuls_co" target="_blank" class="text-sm text-indigo-500 hover:underline">@dbuls_co</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 D'Buls Co. | Powered by Kreativitas Anak Muda.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
